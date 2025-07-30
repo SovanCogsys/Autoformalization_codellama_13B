@@ -74,4 +74,4 @@ if __name__ == "__main__":
     # Step 3: Convert .txt file to JSONL
     convert_txt_to_jsonl(intermediate_txt_path, final_jsonl_path)
 
-    print(f"✅ Conversion complete.\n- .txt saved to: {intermediate_txt_path}\n- .jsonl saved to: {final_jsonl_path}")
+    print(f"Conversion complete.\n- .txt saved to: {intermediate_txt_path}\n- .jsonl saved to: {final_jsonl_path}")
