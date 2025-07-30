@@ -1,8 +1,6 @@
-# %%
 import os
 import torch
 from datasets import load_dataset
-# from datasets import load_from_disk
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -14,9 +12,6 @@ from transformers import EarlyStoppingCallback
 from datasets import Dataset
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"  
-
-# %%
-
 
 print(f"Number of CUDA devices: {torch.cuda.device_count()}")
 
@@ -181,9 +176,6 @@ config = SFTConfig(
 
 )
 
-# Optional: set CUDA device if needed
-# torch.cuda.set_device(0)
-# model = model.to("cuda:0")
 
 # Initialize trainer with model, datasets, PEFT config, and training args
 trainer = SFTTrainer(
